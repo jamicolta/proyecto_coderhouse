@@ -1,25 +1,25 @@
 from django.db import models
 
 # Create your models here.
-class Curso(models.Model):
-    nombre = models.CharField(max_length=40)
-    comision = models.IntegerField()
+# class Curso(models.Model):
+#     nombre = models.CharField(max_length=40)
+#     comision = models.IntegerField()
 
-class Estudiante(models.Model):
-    nombre = models.CharField(max_length=30)
-    apellido = models.CharField(max_length=30)
-    email = models.EmailField()
+# class Estudiante(models.Model):
+#     nombre = models.CharField(max_length=30)
+#     apellido = models.CharField(max_length=30)
+#     email = models.EmailField()
 
-class Profesor(models.Model):
-    nombre = models.CharField(max_length=30)
-    apellido = models.CharField(max_length=30)
-    email = models.EmailField()
-    profesion = models.CharField(max_length=30)
+# class Profesor(models.Model):
+#     nombre = models.CharField(max_length=30)
+#     apellido = models.CharField(max_length=30)
+#     email = models.EmailField()
+#     profesion = models.CharField(max_length=30)
 
-class Entregable(models.Model):
-    nombre = models.CharField(max_length=30)
-    fecha_de_entrega = models.DateField()
-    entregado = models.BooleanField()
+# class Entregable(models.Model):
+#     nombre = models.CharField(max_length=30)
+#     fecha_de_entrega = models.DateField()
+#     entregado = models.BooleanField()
 
 class Familiar(models.Model):
     nombre = models.CharField(max_length=30)
@@ -27,3 +27,5 @@ class Familiar(models.Model):
     edad = models.IntegerField()
     consanguinidad = models.CharField(max_length=30)
     profesion = models.CharField(max_length=30)
+    descripcion = models.TextField()
+    foto = models.TextField()
